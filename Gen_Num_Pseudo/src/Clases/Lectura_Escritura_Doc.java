@@ -11,7 +11,7 @@ public class Lectura_Escritura_Doc {
         try {
             /*Es necesario crear una carpeta en el disco C: con nombre "Num_Pseudo" para que funcione
             correctamente el programa*/
-            FileWriter fw = new FileWriter("C:\\Num_Pseudo\\Numeros_pseudoaleatorios.txt");
+            FileWriter fw = new FileWriter("C:\\Users\\manue\\Simulacion\\Gen_Num_Pseudo\\src\\Clases\\Num_Pseudo.txt");
             for (int i = 0; i < cadena.length(); i++) {
                 fw.write(cadena.charAt(i));
             }
@@ -24,7 +24,7 @@ public class Lectura_Escritura_Doc {
         int c = 0;
         String concatenar = "";
         try {
-            FileReader fr = new FileReader("C:\\Num_Pseudo\\Numeros_pseudoaleatorios.txt");
+            FileReader fr = new FileReader("C:\\Users\\manue\\Simulacion\\Gen_Num_Pseudo\\src\\Clases\\Num_Pseudo.txt");
             while(c!=-1){
                 c = fr.read();
                 char caracter = (char)c;
