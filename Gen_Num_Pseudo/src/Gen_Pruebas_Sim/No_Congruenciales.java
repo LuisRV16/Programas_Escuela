@@ -1,4 +1,4 @@
-package Clases;
+package Gen_Pruebas_Sim;
 //@RC
 import java.math.BigInteger;
 

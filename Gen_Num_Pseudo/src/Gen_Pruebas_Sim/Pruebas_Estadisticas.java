@@ -1,5 +1,6 @@
-package Clases;
+package Gen_Pruebas_Sim;
 //@RC
+import Clases.*;
 import org.apache.commons.math3.distribution.ChiSquaredDistribution;
 
 public class Pruebas_Estadisticas {
