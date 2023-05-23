@@ -1,11 +1,11 @@
 package Gen_Pruebas_Sim;
 //@RC
-import Clases.*;
+import java.util.Arrays;
 import org.apache.commons.math3.distribution.ChiSquaredDistribution;
 
 public class Pruebas_Estadisticas {
 
-    private boolean media = false, varianza = false, uniformidad = false, poker = false, aleatoriedad = false;
+    private boolean media = false, varianza = false, uniformidad = false, poker = false, aleatoriedad = false, chiSquare = false;
     private double signV, z;
     private double[] arr;
     private double chiV;
@@ -44,7 +44,9 @@ public class Pruebas_Estadisticas {
     }
 
     public void uniformidad() {
-        double m = Math.sqrt(arr.length);
+        double m,FE;
+        m = Math.sqrt(arr.length);
+        FE = arr.length/Math.round(m);
         ChiSquaredDistribution Chi = new ChiSquaredDistribution((int) m - 1);
         chiV = Chi.inverseCumulativeProbability(1 - signV);
         double[] subI = new double[(int) m + 1];
@@ -60,7 +62,7 @@ public class Pruebas_Estadisticas {
             }
         }
         for (int i = 0; i < contI.length; i++) {
-            estadistico += Math.pow((m - contI[i]), 2) / m;
+            estadistico += Math.pow((FE - contI[i]), 2) / m;
         }
         if (estadistico < chiV) {
             uniformidad = true;
@@ -445,6 +447,83 @@ public class Pruebas_Estadisticas {
             aleatoriedad = true;
         }
     }
+    
+    public void chiSquare(double array[]){
+        double arr[] = array;
+        double max, min, rango, amplitud, FE;
+        int clases=58;
+        Arrays.sort(arr);
+        min = arr[0];
+        max = arr[arr.length-1];
+//        clases = (int) Math.round(Math.sqrt(array.length));
+        FE = array.length/clases;
+        ChiSquaredDistribution Chi = new ChiSquaredDistribution(clases-1);
+        chiV = Chi.inverseCumulativeProbability(1 - signV);
+        double arrLM[] = new double [clases+1];
+        int arrClases[] = new int [clases];
+        rango = max-min;
+        amplitud = rango/clases;
+        arrLM[0]=0;
+        arrLM[1]=min+amplitud;
+        for (int i = 2; i < clases; i++) {
+            arrLM[i]=arrLM[i-1]+amplitud;
+        }
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < arrClases.length; j++) {
+                if (array[i]>arrLM[j]&&array[i]<=arrLM[j+1]) {
+                    arrClases[j]++;
+                }
+            }
+        }
+        for (int i = 0; i < arrClases.length; i++) {
+            estadistico += Math.pow(arrClases[i]-FE, 2)/FE;
+        }
+        if (estadistico < chiV) {
+            chiSquare = true;
+        }
+    }
+    
+//    public void chiSquare1(double array[]){
+//        double max, min, rango, amplitud,FE;
+//        int clases;
+//        clases = (int) Math.round(Math.sqrt(array.length));
+//        FE = array.length/clases;
+//        double arrLM[] = new double[clases+1];
+//        int arrClases[] = new int[clases];
+//        ChiSquaredDistribution Chi = new ChiSquaredDistribution((int) clases - 1);
+//        chiV = Chi.inverseCumulativeProbability(1 - signV);
+//        max = min = array[0];
+//        for (int i = 0; i < array.length; i++) {
+//            if (array[i]>max) {
+//                max = array[i];
+//            }
+//            if (array[i]<min) {
+//                min = array[i];
+//            }
+//        }
+//        rango = max-min;
+//        amplitud = rango/clases;
+//        arrLM[0]=0;
+//        arrLM[1]=min+amplitud;
+//        for (int i = 2; i < clases; i++) {
+//            arrLM[i]=arrLM[i-1]+amplitud;
+//        }
+//        for (int i = 0; i < array.length; i++) {
+//            for (int j = 0; j < arrClases.length; j++) {
+//                if (array[i]>arrLM[j]&&array[i]<=arrLM[j+1]) {
+//                    arrClases[i]++;
+//                }
+//            }
+//        }
+//        for (int i = 0; i < arrClases.length; i++) {
+//            estadistico += Math.pow(arrClases[i]-FE, 2)/FE;
+//        }
+//        if (estadistico < chiV) {
+//            chiSquare = true;
+//        }
+//    }
+    
+    
 
     public void setSignV(double signV) {
         this.signV = signV;
@@ -502,6 +581,9 @@ public class Pruebas_Estadisticas {
         return aleatoriedad;
     }
 
+    public boolean isChiSquare(){
+        return chiSquare;
+    }
     public void setNum_d(int num_d) {
         this.num_d = num_d;
 
