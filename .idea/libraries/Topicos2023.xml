@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Topicos2023">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Topicos2023/dist/Topicos2023.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Simulaci_n">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Gen_Num_Pseudo/dist/Simulaci_n.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,58 @@
+
+e
+java:S1192f"IDefine a constant instead of duplicating this literal "Semilla " 3 times.(³¼ª8ªñÁ’Œ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ¡†Èşÿÿÿÿ8«ñÁ’Œ1
+l	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó¶»^8«ñÁ’Œ1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ëÌ¬†8«ñÁ’Œ1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü³ÖÉ8«ñÁ’Œ1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ü³ÖÉ8«ñÁ’Œ1
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ç¬¸‚8¬ñÁ’Œ1
+>
+java:S16438"Use a StringBuilder instead.(ã¤–™ÿÿÿÿÿ8¬ñÁ’Œ1
+`
+java:S2184‡"BCast one of the operands of this addition operation to a "double".(÷¦8­ñÁ’Œ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ìéáüÿÿÿÿ8¯ñÁ’Œ1
+o
+java:S3776	"RRefactor this method to reduce its Cognitive Complexity from 40 to the 15 allowed.(Çµí‘8•óÁ’Œ1
+[
+java:S1854"9Remove this useless assignment to local variable "menor".(Óò¬ãøÿÿÿÿ8•óÁ’Œ1
+[
+java:S1854"9Remove this useless assignment to local variable "mayor".(ÏÏğµüÿÿÿÿ8•óÁ’Œ1
+R
+java:S1854"5Remove this useless assignment to local variable "D".(ëÌ¬†8•óÁ’Œ1
+Q
+java:S1854"5Remove this useless assignment to local variable "C".(ó¶»^8•óÁ’Œ1
+I
+java:S1659",Declare "cont_variables" on a separate line.(ü³ÖÉ8¥óÁ’Œ1
+B
+java:S1481"&Remove this unused "C" local variable.(ó¶»^8¥óÁ’Œ1
+C
+java:S1481"&Remove this unused "D" local variable.(ëÌ¬†8¥óÁ’Œ1
+H
+java:S1659"&Declare "promedio" on a separate line.(ş¸‘‘úÿÿÿÿ8¥óÁ’Œ1
+H
+java:S1481"&Remove this unused "s" local variable.(®şîìøÿÿÿÿ8¥óÁ’Œ1
+H
+java:S1481"&Remove this unused "v" local variable.(¸çôùÿÿÿÿ8¥óÁ’Œ1
+U	java:S106N"9Replace this use of System.out or System.err by a logger.(óè­Ø8¸óÁ’Œ1
+Z	java:S106R"9Replace this use of System.out or System.err by a logger.(Å£¨çşÿÿÿÿ8¸óÁ’Œ1
+Z	java:S106S"9Replace this use of System.out or System.err by a logger.(Æ¼‘ûÿÿÿÿ8¸óÁ’Œ1
+U	java:S106T"9Replace this use of System.out or System.err by a logger.(ø„ƒ‚8¸óÁ’Œ1
+]	java:S125X"<This block of commented-out lines of code should be removed.(ò§Úìüÿÿÿÿ8¾óÁ’Œ1
+U	java:S106["9Replace this use of System.out or System.err by a logger.(Šïå8¿óÁ’Œ1
+Z	java:S106^"9Replace this use of System.out or System.err by a logger.(«è€Óÿÿÿÿÿ8¿óÁ’Œ1
+Z	java:S106b"9Replace this use of System.out or System.err by a logger.(Áœ„ºÿÿÿÿÿ8¿óÁ’Œ1
+T	java:S106f"9Replace this use of System.out or System.err by a logger.(³¼ª8¿óÁ’Œ1
+Z	java:S106j"9Replace this use of System.out or System.err by a logger.(ñØçÊÿÿÿÿÿ8¿óÁ’Œ1
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(õá88¿óÁ’Œ1
+Z	java:S106r"9Replace this use of System.out or System.err by a logger.(š©›³úÿÿÿÿ8¿óÁ’Œ1
+X	java:S125t"<This block of commented-out lines of code should be removed.(ÿ¦™˜8¿óÁ’Œ1
+X	java:S125x"<This block of commented-out lines of code should be removed.(ÿ¦™˜8ÄóÁ’Œ1
+U	java:S106~"9Replace this use of System.out or System.err by a logger.(Åì£8ÄóÁ’Œ1
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ìø”‘8ÄóÁ’Œ1
+V	java:S106€"9Replace this use of System.out or System.err by a logger.(‹ú“ñ8ÄóÁ’Œ1
+[	java:S106"9Replace this use of System.out or System.err by a logger.(Å‰¿øÿÿÿÿ8ÈóÁ’Œ1
+[	java:S106‚"9Replace this use of System.out or System.err by a logger.(âÔùÿÿÿÿÿ8ÈóÁ’Œ1
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(³Á¡ãıÿÿÿÿ8ÈóÁ’Œ1
+ä
+java:S6541	"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 116 to 64, Complexity from 15 to 14, Nesting Level from 6 to 2, Number of Variables from 29 to 6.(Çµí‘8ÎóÁ’Œ1

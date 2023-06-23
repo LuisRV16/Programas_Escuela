@@ -42,8 +42,10 @@ public class Pruebas_Estadisticas {
         }
     }
 
-    public void uniformidad() {
-        double m = Math.sqrt(arr.length);
+   public void uniformidad() {
+        double m,FE;
+        m = Math.sqrt(arr.length);
+        FE = arr.length/Math.round(m);
         ChiSquaredDistribution Chi = new ChiSquaredDistribution((int) m - 1);
         chiV = Chi.inverseCumulativeProbability(1 - signV);
         double[] subI = new double[(int) m + 1];
@@ -59,7 +61,7 @@ public class Pruebas_Estadisticas {
             }
         }
         for (int i = 0; i < contI.length; i++) {
-            estadistico += Math.pow((m - contI[i]), 2) / m;
+            estadistico += Math.pow((FE - contI[i]), 2) / m;
         }
         if (estadistico < chiV) {
             uniformidad = true;
